@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-Assignment-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="h-100 sbg">
+      <div class="container p-5">
+        <h1 class="pt-2 title1 text-center position-relative">Bookmarker</h1>
+
+        <div class="mt-5 section-border border-1">
+          <h2 class="pt-4 text-center title2">
+            <i class="fa-solid fa-bookmark me-2 pb-3 fs-4"></i>Bookmark your
+            favorite sites<i class="fa-solid fa-bookmark ms-2 fs-4"></i>
+          </h2>
+          <label for="bname" class="fw-bold ff">
+            <i class="fa-solid fa-book me-1"></i> Site Name</label
+          >
+          <input
+            type="text"
+            id="bName"
+            class="form-control mb-3"
+            placeholder="Bookmark Name"
+          />
+          <label for="burl" class="fw-bold ff"
+            ><i class="fa-solid fa-link me-1"></i>Site URL</label
+          >
+          <input
+            type="email"
+            id="burl"
+            class="form-control mb-3"
+            placeholder="WebSite URL"
+          />
+          <div class="d-flex justify-content-center ff">
+            <button
+              onclick="getValues(this.value)"
+              class="btn btn-section w-25 rounded-5 fw-bold mb-3"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+        <div class="inner">
+          <table class="table mt-5 ff text-center fw-bold">
+            <thead class="table-danger">
+              <tr>
+                <th>index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="demo" >
+          
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
